@@ -11,9 +11,17 @@
 body {
 	color: $offblack;
 	font-size: 14px; // body-level font size for "em"-scaled designs
+	@media (min-width: 500px) {
+		font-size: 16px;
+	}
+	@media (min-width: 720px) {
+		font-size: 18px;
+	}
 }
 h1 {
 	font-family: $montserrat;
+	text-align: center;
+	margin-bottom: 0;
 }
 p,a {
 	font-family: $lato;
@@ -23,10 +31,10 @@ a {
 	text-decoration: none;
 }
 .container {
-	margin-top: 50px; // Pushes below topnav
+	margin-top: 70px; // Pushes below topnav
 }
 .calViz {
-	max-width: 500px;
+	max-width: 650px;
 	margin: 0 auto;
 	padding: 1em;
 	// overflow: scroll;
@@ -40,41 +48,68 @@ a {
 		stroke-width: 2px;
 		&--trip {
 			fill: #dd0000;
+			cursor: pointer;
 		}
 	}
 	&__label {
 		fill: #888888;
+		font-size: .5em;
+		font-family: $montserrat;
+		font-weight: bold;
+	}
+	p {
+		&.source {
+		}
 	}
 }
 
 
 .tooltip {
-	position: absolute;
-	max-width: 320px;
-	padding: .5em;
-	border-radius: 20px 20px 20px 0;
-	border: 2px solid white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	// max-width: 420px;
+	width: 100%;
+	padding: 1em;
+	// border-radius: 10px;
+	border-bottom: 2px solid white;
 	color: white;
-	background-color: #DD0000;
+	background-color: rgba(#DD0000, .8);
+	text-align: center;
 	font-family: $lato;
 	text-transform: uppercase;
-	p {
-		margin: 0;
+	z-index: 9999999999;
+	@media (min-width: 700px) {
+		position: absolute;
+	}
+	&__header {
+		font-size: 1.2em;
+		font-weight: bold;
+		margin: 0 0 1em 0;
 	}
 	&__text {
+		max-width: 500px;
+		margin: 0 auto;
 		span {
 			font-weight: bold;
 		}
 	}
+	i {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-size: 2em;
+		cursor: pointer;
+	}
 }
 /* Leaderboard */
-// #leaderboard {
-// 	width: 728px;
-// 	height: 90px;
-// 	background-color: #222222;
-// 	margin: 10px auto;
-// 	text-align: center;
-// 	@media (max-width: 730px){
-// 		display: none;
-// 	}
-// }
+#leaderboard {
+	width: 728px;
+	height: 90px;
+	background-color: #222222;
+	margin: 10px auto;
+	text-align: center;
+	@media (max-width: 730px){
+		display: none;
+	}
+}

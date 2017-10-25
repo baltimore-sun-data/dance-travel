@@ -365,16 +365,16 @@
 	<rect class="calViz__day calViz__day--empty" transform="translate(200,340)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(210,340)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(220,340)" width="9px" height="9px"></rect>
-	<text class="calViz__label" transform="translate(0,28)">Jan</text>
-	<text class="calViz__label" transform="translate(80,28)">Feb</text>
-	<text class="calViz__label" transform="translate(160,28)">Mar</text>
-	<text class="calViz__label" transform="translate(0,118)">Apr</text>
-	<text class="calViz__label" transform="translate(80,118)">May</text>
-	<text class="calViz__label" transform="translate(160,118)">Jun</text>
-	<text class="calViz__label" transform="translate(0,208)">Jul</text>
-	<text class="calViz__label" transform="translate(80,208)">Aug</text>
-	<text class="calViz__label" transform="translate(160,208)">Oct</text>
-	<text class="calViz__label" transform="translate(0,298)">Sep</text>
-	<text class="calViz__label" transform="translate(80,298)">Nov</text>
-	<text class="calViz__label" transform="translate(160,298)">Dec</text>
+	<text class="calViz__label" transform="translate(0,26)">Jan</text>
+	<text class="calViz__label" transform="translate(80,26)">Feb</text>
+	<text class="calViz__label" transform="translate(160,26)">Mar</text>
+	<text class="calViz__label" transform="translate(0,116)">Apr</text>
+	<text class="calViz__label" transform="translate(80,116)">May</text>
+	<text class="calViz__label" transform="translate(160,116)">Jun</text>
+	<text class="calViz__label" transform="translate(0,206)">Jul</text>
+	<text class="calViz__label" transform="translate(80,206)">Aug</text>
+	<text class="calViz__label" transform="translate(160,206)">Oct</text>
+	<text class="calViz__label" transform="translate(0,296)">Sep</text>
+	<text class="calViz__label" transform="translate(80,296)">Nov</text>
+	<text class="calViz__label" transform="translate(160,296)">Dec</text>
 </svg>

@@ -464,9 +464,17 @@ th {
 body {
   color: #1e1e1e;
   font-size: 14px; }
+  @media (min-width: 500px) {
+    body {
+      font-size: 16px; } }
+  @media (min-width: 720px) {
+    body {
+      font-size: 18px; } }
 
 h1 {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 0; }
 
 p, a {
   font-family: "Lato", sans-serif; }
@@ -476,10 +484,10 @@ a {
   text-decoration: none; }
 
 .container {
-  margin-top: 50px; }
+  margin-top: 70px; }
 
 .calViz {
-  max-width: 500px;
+  max-width: 650px;
   margin: 0 auto;
   padding: 1em; }
   .calViz__day {
@@ -487,23 +495,53 @@ a {
     stroke: #fff;
     stroke-width: 2px; }
     .calViz__day--trip {
-      fill: #dd0000; }
+      fill: #dd0000;
+      cursor: pointer; }
   .calViz__label {
-    fill: #888888; }
-
-.tooltip {
-  position: absolute;
-  max-width: 320px;
-  padding: .5em;
-  border-radius: 20px 20px 20px 0;
-  border: 2px solid white;
-  color: white;
-  background-color: #DD0000;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase; }
-  .tooltip p {
-    margin: 0; }
-  .tooltip__text span {
+    fill: #888888;
+    font-size: .5em;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold; }
 
+.tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  border-bottom: 2px solid white;
+  color: white;
+  background-color: rgba(221, 0, 0, 0.8);
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  z-index: 9999999999; }
+  @media (min-width: 700px) {
+    .tooltip {
+      position: absolute; } }
+  .tooltip__header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 1em 0; }
+  .tooltip__text {
+    max-width: 500px;
+    margin: 0 auto; }
+    .tooltip__text span {
+      font-weight: bold; }
+  .tooltip i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    cursor: pointer; }
+
 /* Leaderboard */
+#leaderboard {
+  width: 728px;
+  height: 90px;
+  background-color: #222222;
+  margin: 10px auto;
+  text-align: center; }
+  @media (max-width: 730px) {
+    #leaderboard {
+      display: none; } }
