@@ -23,7 +23,10 @@ a {
 	text-decoration: none;
 }
 .container {
-	margin-top: 50px; // Pushes below topnav
+	margin-top: 100px; // Pushes below topnav
+}
+.calViz {
+	overflow: scroll;
 }
 
 

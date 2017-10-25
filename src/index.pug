@@ -1,6 +1,8 @@
 - var datalink = "http://data.baltimoresun.com/PROJECTLINK/"
 - var datalink = ""
 
+include includes/data.pug
+
 doctype html
 //if lt IE 7
 	<html class="no-js lt-ie9 lt-ie8 lt-ie7">
@@ -44,15 +46,15 @@ html(class="no-js", lang="en")
 		//- Remember to update the omniture tags
 		include includes/omniture.html
 		.container
-			h1 H1 / MONTSERRAT
-			p P / LATO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec eros ac risus condimentum pretium. In faucibus quis risus sit amet ornare.
-			a(href="" target="_blank") A / LATO / GOLDENROD
+			.calViz
+
 		//- Ad tag, uncomment to put in ad. Be sure to uncomment the ad-for-header above.
 		//- #leaderboard
 			include includes/ad-for-body.html
 
 		//Javascript
 		script(src=datalink + "js/min/jquery-3.0.0.min.js")
+		script(src="https://d3js.org/d3.v4.min.js")
 		script(src=datalink + "js/app.js")
 		//- script(src=datalink + "js/min/app.min.js")
 
