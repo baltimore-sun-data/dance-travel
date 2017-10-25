@@ -482,9 +482,6 @@ a {
   max-width: 500px;
   margin: 0 auto;
   padding: 1em; }
-  .calViz svg {
-    margin: 0 auto;
-    width: 100%; }
   .calViz__day {
     fill: #cecece;
     stroke: #fff;
@@ -496,13 +493,17 @@ a {
 
 .tooltip {
   position: absolute;
+  max-width: 320px;
   padding: .5em;
-  border-radius: 50px 50px 50px 0;
+  border-radius: 20px 20px 20px 0;
+  border: 2px solid white;
   color: white;
   background-color: #DD0000;
   font-family: "Lato", sans-serif;
   text-transform: uppercase; }
   .tooltip p {
     margin: 0; }
+  .tooltip__text span {
+    font-weight: bold; }
 
 /* Leaderboard */
