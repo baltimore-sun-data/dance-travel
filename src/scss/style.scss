@@ -23,13 +23,46 @@ a {
 	text-decoration: none;
 }
 .container {
-	margin-top: 100px; // Pushes below topnav
+	margin-top: 50px; // Pushes below topnav
 }
 .calViz {
-	overflow: scroll;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 1em;
+	// overflow: scroll;
+	svg {
+		margin: 0 auto;
+		width: 100%;
+	}
+	&__day {
+		fill: #cecece;
+		stroke: #fff;
+		stroke-width: 2px;
+		&--trip {
+			fill: #dd0000;
+		}
+	}
+	&__label {
+		fill: #888888;
+	}
 }
 
 
+.tooltip {
+	position: absolute;
+	padding: .5em;
+	border-radius: 50px 50px 50px 0;
+	color: white;
+	background-color: #DD0000;
+	font-family: $lato;
+	text-transform: uppercase;
+	p {
+		margin: 0;
+	}
+	&__text {
+
+	}
+}
 /* Leaderboard */
 // #leaderboard {
 // 	width: 728px;

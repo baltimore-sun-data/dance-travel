@@ -1,4 +1,4 @@
-# template-general
+# Dallas Dance travel visualization
 
 This is a general template for The Baltimore Sun built around Pug and SCSS.
 
