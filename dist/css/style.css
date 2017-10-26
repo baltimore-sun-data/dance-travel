@@ -505,6 +505,8 @@ a {
     .calViz__day--trip {
       fill: #dd0000;
       cursor: pointer; }
+      .calViz__day--trip--dbl {
+        fill: #7F1815; }
   .calViz__label {
     fill: #888888;
     font-size: .5em;
@@ -519,6 +521,9 @@ a {
   height: auto;
   color: white;
   background-color: rgba(221, 0, 0, 0.9);
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 2px 2px 0 2px;
   border-radius: 20px 20px 0 0;
   font-family: "Lato", sans-serif;
   text-align: center;
@@ -537,10 +542,12 @@ a {
   .tooltip__header {
     font-size: 1.2em;
     font-weight: bold;
-    margin: 0 0 1em 0; }
+    margin: 0; }
   .tooltip__text {
     max-width: 500px;
     margin: 0 auto; }
+    .tooltip__text--date {
+      margin-top: 1em; }
     .tooltip__text span {
       font-weight: bold; }
   .tooltip i {

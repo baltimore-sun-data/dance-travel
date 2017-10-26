@@ -39,9 +39,9 @@
 	<rect class="calViz__day calViz__day--trip calViz__day--1" data-trip="1" transform="translate(80,40)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--1" data-trip="1" transform="translate(90,40)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--1" data-trip="1" transform="translate(100,40)" width="9px" height="9px"></rect>
-	<rect class="calViz__day calViz__day--trip calViz__day--1 calViz__day--2" data-trip="1" transform="translate(110,40)" width="9px" height="9px"></rect>
-	<rect class="calViz__day calViz__day--trip calViz__day--1 calViz__day--2" data-trip="1" transform="translate(120,40)" width="9px" height="9px"></rect>
-	<rect class="calViz__day calViz__day--trip calViz__day--1 calViz__day--2" data-trip="1" transform="translate(130,40)" width="9px" height="9px"></rect>
+	<rect class="calViz__day calViz__day--trip calViz__day--trip--dbl calViz__day--1 calViz__day--2" data-trip="2" transform="translate(110,40)" width="9px" height="9px"></rect>
+	<rect class="calViz__day calViz__day--trip calViz__day--trip--dbl calViz__day--1 calViz__day--2" data-trip="2" transform="translate(120,40)" width="9px" height="9px"></rect>
+	<rect class="calViz__day calViz__day--trip calViz__day--trip--dbl calViz__day--1 calViz__day--2" data-trip="2" transform="translate(130,40)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(140,40)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(80,50)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(90,50)" width="9px" height="9px"></rect>
@@ -92,7 +92,7 @@
 	<rect class="calViz__day calViz__day--empty" transform="translate(200,70)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--6" data-trip="6" transform="translate(50,120)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--6" data-trip="6" transform="translate(60,120)" width="9px" height="9px"></rect>
-	<rect class="calViz__day calViz__day--trip calViz__day--6 calViz__day--7" data-trip="6" transform="translate(0,130)" width="9px" height="9px"></rect>
+	<rect class="calViz__day calViz__day--trip calViz__day--trip--dbl calViz__day--6 calViz__day--7" data-trip="7" transform="translate(0,130)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--7" data-trip="7" transform="translate(10,130)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--7" data-trip="7" transform="translate(20,130)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--7" data-trip="7" transform="translate(30,130)" width="9px" height="9px"></rect>
@@ -118,7 +118,7 @@
 	<rect class="calViz__day calViz__day--empty" transform="translate(20,160)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--10" data-trip="10" transform="translate(30,160)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--10" data-trip="10" transform="translate(40,160)" width="9px" height="9px"></rect>
-	<rect class="calViz__day calViz__day--trip calViz__day--10 calViz__day--11" data-trip="10" transform="translate(50,160)" width="9px" height="9px"></rect>
+	<rect class="calViz__day calViz__day--trip calViz__day--trip--dbl calViz__day--10 calViz__day--11" data-trip="11" transform="translate(50,160)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(60,160)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(80,120)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(90,120)" width="9px" height="9px"></rect>
@@ -187,9 +187,9 @@
 	<rect class="calViz__day calViz__day--empty" transform="translate(10,220)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(20,220)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--17" data-trip="17" transform="translate(30,220)" width="9px" height="9px"></rect>
-	<rect class="calViz__day calViz__day--empty" transform="translate(40,220)" width="9px" height="9px"></rect>
-	<rect class="calViz__day calViz__day--empty" transform="translate(50,220)" width="9px" height="9px"></rect>
-	<rect class="calViz__day calViz__day--empty" transform="translate(60,220)" width="9px" height="9px"></rect>
+	<rect class="calViz__day calViz__day--trip calViz__day--17" data-trip="17" transform="translate(40,220)" width="9px" height="9px"></rect>
+	<rect class="calViz__day calViz__day--trip calViz__day--17" data-trip="17" transform="translate(50,220)" width="9px" height="9px"></rect>
+	<rect class="calViz__day calViz__day--trip calViz__day--17" data-trip="17" transform="translate(60,220)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(0,230)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--18" data-trip="18" transform="translate(10,230)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--19" data-trip="19" transform="translate(20,230)" width="9px" height="9px"></rect>
@@ -291,7 +291,7 @@
 	<rect class="calViz__day calViz__day--empty" transform="translate(0,330)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(10,330)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--26" data-trip="26" transform="translate(20,330)" width="9px" height="9px"></rect>
-	<rect class="calViz__day calViz__day--trip calViz__day--26 calViz__day--27" data-trip="26" transform="translate(30,330)" width="9px" height="9px"></rect>
+	<rect class="calViz__day calViz__day--trip calViz__day--trip--dbl calViz__day--26 calViz__day--27" data-trip="27" transform="translate(30,330)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--27" data-trip="27" transform="translate(40,330)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--27" data-trip="27" transform="translate(50,330)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(60,330)" width="9px" height="9px"></rect>
@@ -300,7 +300,7 @@
 	<rect class="calViz__day calViz__day--trip calViz__day--28" data-trip="28" transform="translate(20,340)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(30,340)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--29" data-trip="29" transform="translate(40,340)" width="9px" height="9px"></rect>
-	<rect class="calViz__day calViz__day--trip calViz__day--29 calViz__day--30" data-trip="29" transform="translate(50,340)" width="9px" height="9px"></rect>
+	<rect class="calViz__day calViz__day--trip calViz__day--trip--dbl calViz__day--29 calViz__day--30" data-trip="30" transform="translate(50,340)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--30" data-trip="30" transform="translate(60,340)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(0,350)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(10,350)" width="9px" height="9px"></rect>
@@ -333,7 +333,7 @@
 	<rect class="calViz__day calViz__day--empty" transform="translate(80,340)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(90,340)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--trip calViz__day--36" data-trip="36" transform="translate(100,340)" width="9px" height="9px"></rect>
-	<rect class="calViz__day calViz__day--trip calViz__day--37" data-trip="37" transform="translate(110,340)" width="9px" height="9px"></rect>
+	<rect class="calViz__day calViz__day--trip calViz__day--trip--dbl calViz__day--37" data-trip="37" transform="translate(110,340)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(200,300)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(210,300)" width="9px" height="9px"></rect>
 	<rect class="calViz__day calViz__day--empty" transform="translate(220,300)" width="9px" height="9px"></rect>
@@ -373,8 +373,8 @@
 	<text class="calViz__label" transform="translate(160,116)">Jun</text>
 	<text class="calViz__label" transform="translate(0,206)">Jul</text>
 	<text class="calViz__label" transform="translate(80,206)">Aug</text>
-	<text class="calViz__label" transform="translate(160,206)">Oct</text>
-	<text class="calViz__label" transform="translate(0,296)">Sep</text>
+	<text class="calViz__label" transform="translate(160,206)">Sep</text>
+	<text class="calViz__label" transform="translate(0,296)">Oct</text>
 	<text class="calViz__label" transform="translate(80,296)">Nov</text>
 	<text class="calViz__label" transform="translate(160,296)">Dec</text>
 </svg>
