@@ -49,17 +49,23 @@ html(class="no-js", lang="en")
 		.container
 			h1 Visualizing Dallas Dance's trips in 2016
 			.calViz
+				i(class="fa fa-facebook-square" aria-hidden="true")
+				i(class="fa fa-twitter-square" aria-hidden="true")
 				p Former Baltimore County school superintendent Dallas Dance traveled extensively on school business during his time on the job, according to travel records obtained by The Baltimore Sun.
 				p Many of these trips were to attend or speak at education-focused conferences and symposiums. 2016 was a particularly busy year for travel: records show that Dance spent over 80 days on the road for official school business during 2016 alone.
 				p Here we visualize out the out-of-town trips that Dance took in 2016; highlighting dates, destination, and costs to the taxpayer.
 				a(href="http://data.baltimoresun.com/news/dance-travel-map/" target="_blank") More: Mapping Dance's 2016 trips | Baltimore Sun's investigation into Dallas Dance's travel
-				.tooltipAnchor
 				include includes/tripcalendar.svg
 				p.source Source: Staff reports
+			.tooltipAnchor
 		//- Ad tag, uncomment to put in ad. Be sure to uncomment the ad-for-header above.
 		#leaderboard
 			include includes/ad-for-body.html
-
+		footer
+			p.label Design and development
+			p.name Jin Bae Kim
+			p.label Data
+			p.name Doug Donovan
 		//Javascript
 		script(src=datalink + "js/min/jquery-3.0.0.min.js")
 		script(src="https://d3js.org/d3.v4.min.js")

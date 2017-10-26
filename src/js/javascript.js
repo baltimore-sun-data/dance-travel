@@ -1,16 +1,16 @@
 var dataproject = {
 	init: function(){
-		//dataproject.share();
+		dataproject.share();
 		dataproject.calendar();
 	},
 	share: function(){
-		$(".icon-twitter").on("click", function(){
+		$(".fa-twitter-square").on("click", function(){
 			var tweet = ""; //Tweet text
 			var url = "http://data.baltimoresun.com/news/dance-travel/"; //Interactive URL
 			var twitter_url = "https://twitter.com/intent/tweet?text="+tweet+"&url="+url+"&tw_p=tweetbutton";
 			window.open(twitter_url, 'mywin','left=200,top=200,width=500,height=300,toolbar=1,resizable=0'); return false;
 		});
-		$(".icon-facebook").on("click", function(){
+		$(".fa-facebook-square").on("click", function(){
 			var picture = "http://data.baltimoresun.com/news/dance-travel/thumb.png"; //Picture URL
 			var title = "Visualizing Dallas Dance's trips in 2016"; //Post title
 			var description = ""; //Post description
@@ -31,11 +31,10 @@ var dataproject = {
 				screenWidth = $(this).innerWidth();
 			}, 250);
 		});
-		var tooltip = d3.select('.tooltipAnchor')
-			.append('div')
-			.attr('class','tooltip')
-			.style('position','fixed')
+		var tooltipWrap = d3.select('.tooltipAnchor')
 			.style('visibility', 'hidden');
+		var tooltip = tooltipWrap.append('div')
+			.attr('class','tooltip');
 		var tooltipClose = tooltip.append('i')
 			.attr('class','fa fa-times-circle-o');
 		tooltip.append('p')
@@ -54,23 +53,16 @@ var dataproject = {
 			.on('mouseover', function(){
 				dataID = $(this).data('trip');
 				currData = calEvents[dataID];
-				tooltip.style('visibility', 'visible');
+				tooltipWrap.style('visibility', 'visible');
 				tooltipline0.text(currData[0] + '/' + currData[1] + ' - ' +
 					currData[0] + '/' + (currData[1] + currData[2]));
 				tooltipline1.text(currData[3] + ', ' + currData[4]);
 				tooltipline2.html('<br><span>Event:</span> ' + currData[6]);
 				tooltipline3.html('<span>Cost:</span> ' + currData[5]);
 
-			})
-			.on('mousemove', function(){
-				// if(screenWidth > 700) {
-				// 	return tooltip.style('top', (d3.event.pageY-200)+'px')
-				// 	.style("left",(d3.event.pageX - 210)+"px");
-				// } else {\
-				// }
 			});
 		tooltipClose.on('click', function() {
-			return tooltip.style("visibility", "hidden");
+			return tooltipWrap.style("visibility", "hidden");
 		});
 	}
 

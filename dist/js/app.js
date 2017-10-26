@@ -1,16 +1,17 @@
 var dataproject = {
     init: function() {
+        dataproject.share();
         dataproject.calendar();
     },
     share: function() {
-        $(".icon-twitter").on("click", function() {
+        $(".fa-twitter-square").on("click", function() {
             var tweet = "";
             var url = "http://data.baltimoresun.com/news/dance-travel/";
             var twitter_url = "https://twitter.com/intent/tweet?text=" + tweet + "&url=" + url + "&tw_p=tweetbutton";
             window.open(twitter_url, "mywin", "left=200,top=200,width=500,height=300,toolbar=1,resizable=0");
             return false;
         });
-        $(".icon-facebook").on("click", function() {
+        $(".fa-facebook-square").on("click", function() {
             var picture = "http://data.baltimoresun.com/news/dance-travel/thumb.png";
             var title = "Visualizing Dallas Dance's trips in 2016";
             var description = "";
@@ -31,7 +32,8 @@ var dataproject = {
                 screenWidth = $(this).innerWidth();
             }, 250);
         });
-        var tooltip = d3.select(".tooltipAnchor").append("div").attr("class", "tooltip").style("position", "fixed").style("visibility", "hidden");
+        var tooltipWrap = d3.select(".tooltipAnchor").style("visibility", "hidden");
+        var tooltip = tooltipWrap.append("div").attr("class", "tooltip");
         var tooltipClose = tooltip.append("i").attr("class", "fa fa-times-circle-o");
         tooltip.append("p").attr("class", "tooltip__header").text("Trip details");
         var tooltipline0 = tooltip.append("p").attr("class", "tooltip__text");
@@ -42,14 +44,14 @@ var dataproject = {
         calBlocks.on("mouseover", function() {
             dataID = $(this).data("trip");
             currData = calEvents[dataID];
-            tooltip.style("visibility", "visible");
+            tooltipWrap.style("visibility", "visible");
             tooltipline0.text(currData[0] + "/" + currData[1] + " - " + currData[0] + "/" + (currData[1] + currData[2]));
             tooltipline1.text(currData[3] + ", " + currData[4]);
             tooltipline2.html("<br><span>Event:</span> " + currData[6]);
             tooltipline3.html("<span>Cost:</span> " + currData[5]);
-        }).on("mousemove", function() {});
+        });
         tooltipClose.on("click", function() {
-            return tooltip.style("visibility", "hidden");
+            return tooltipWrap.style("visibility", "hidden");
         });
     }
 };

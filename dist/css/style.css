@@ -484,15 +484,23 @@ a {
   text-decoration: none; }
 
 .container {
-  margin-top: 70px; }
+  margin-top: 70px;
+  position: relative; }
 
 .calViz {
+  height: 100%;
   max-width: 650px;
   margin: 0 auto;
   padding: 1em; }
+  .calViz i {
+    font-size: 1.5em;
+    margin-right: .5em;
+    cursor: pointer; }
+    .calViz i:hover {
+      color: #dd0000; }
   .calViz__day {
     fill: #cecece;
-    stroke: #fff;
+    stroke: #ffffff;
     stroke-width: 2px; }
     .calViz__day--trip {
       fill: #dd0000;
@@ -503,22 +511,29 @@ a {
     font-family: "Montserrat", sans-serif;
     font-weight: bold; }
 
-.tooltip {
+.tooltipAnchor {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  padding: 1em;
-  border-bottom: 2px solid white;
+  height: auto;
   color: white;
-  background-color: rgba(221, 0, 0, 0.8);
-  text-align: center;
+  background-color: rgba(221, 0, 0, 0.9);
+  border-radius: 20px 20px 0 0;
   font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  z-index: 9999999999; }
+  text-align: center;
+  text-transform: uppercase; }
   @media (min-width: 700px) {
-    .tooltip {
-      position: absolute; } }
+    .tooltipAnchor {
+      max-width: 700px;
+      left: 50%;
+      margin-left: -350px; } }
+
+.tooltip {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 1em; }
   .tooltip__header {
     font-size: 1.2em;
     font-weight: bold;
@@ -530,10 +545,25 @@ a {
       font-weight: bold; }
   .tooltip i {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 0;
     font-size: 2em;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #222222; }
+    .tooltip i:hover {
+      color: #ffffff; }
+
+footer {
+  padding: 1em;
+  background-color: #222222;
+  text-align: center; }
+  footer p {
+    color: white; }
+    footer p.label {
+      margin: 0;
+      font-weight: bold; }
+    footer p.name {
+      margin-top: .3em; }
 
 /* Leaderboard */
 #leaderboard {

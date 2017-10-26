@@ -32,19 +32,27 @@ a {
 }
 .container {
 	margin-top: 70px; // Pushes below topnav
+	position: relative;
 }
 .calViz {
+	height: 100%;
 	max-width: 650px;
 	margin: 0 auto;
 	padding: 1em;
 	// overflow: scroll;
+	i {
+		font-size: 1.5em;
+		margin-right: .5em;
+		cursor: pointer;
+		&:hover {
+			color: #dd0000;
+		}
+	}
 	svg {
-		// margin: 0 auto;
-		// width: 100%;
 	}
 	&__day {
 		fill: #cecece;
-		stroke: #fff;
+		stroke: #ffffff;
 		stroke-width: 2px;
 		&--trip {
 			fill: #dd0000;
@@ -63,25 +71,30 @@ a {
 	}
 }
 
-
-.tooltip {
+.tooltipAnchor {
 	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	color: white;
+	background-color: rgba(#DD0000, .9);
+	border-radius: 20px 20px 0 0;
+	font-family: $lato;
+	text-align: center;
+	text-transform: uppercase;
+	@media (min-width: 700px) {
+		max-width: 700px;
+		left: 50%;
+		margin-left: -350px;
+	}
+
+}
+.tooltip {
+	position: relative;
 	top: 0;
 	left: 0;
-	// max-width: 420px;
-	width: 100%;
-	padding: 1em;
-	// border-radius: 10px;
-	border-bottom: 2px solid white;
-	color: white;
-	background-color: rgba(#DD0000, .8);
-	text-align: center;
-	font-family: $lato;
-	text-transform: uppercase;
-	z-index: 9999999999;
-	@media (min-width: 700px) {
-		position: absolute;
-	}
+	margin: 1em;
 	&__header {
 		font-size: 1.2em;
 		font-weight: bold;
@@ -96,10 +109,30 @@ a {
 	}
 	i {
 		position: absolute;
-		top: 10px;
-		right: 10px;
+		top: 0;
+		right: 0;
 		font-size: 2em;
 		cursor: pointer;
+		color: #222222;
+		&:hover {
+			color: #ffffff;
+		}
+	}
+}
+
+footer {
+	padding: 1em;
+	background-color: #222222;
+	text-align: center;
+	p {
+		color: white;
+		&.label {
+			margin: 0;
+			font-weight: bold;
+		}
+		&.name {
+			margin-top: .3em;
+		}
 	}
 }
 /* Leaderboard */
